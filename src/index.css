@@ -402,11 +402,11 @@ Sidebar
 .sidebar-sublinks svg {
   color: var(--grey-500);
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .sidebar {
     display: none;
   }
-}
+} */
 
 /* 
 ============= 

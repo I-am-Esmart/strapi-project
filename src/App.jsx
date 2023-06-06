@@ -12,7 +12,7 @@ function App() {
   return (
     <main>
       <Navbar />
-      {/* <Hero /> */}
+      {/* <Hero />dfas */}
       <Sidebar />
       <Submenu />
     </main>
