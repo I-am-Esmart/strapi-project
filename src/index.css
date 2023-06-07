@@ -354,32 +354,33 @@ Sidebar
   opacity: 0;
   visibility: hidden;
 }
+/* togggle class */
 .show-sidebar {
   opacity: 1;
   visibility: visible;
   transition-property: opacity;
   transition-duration: 1s;
 }
-/* toggle class */
 
-.sidebar-container {
-  padding: 4rem 2rem;
+.show .sidebar-container {
+  padding: 4rem;
   position: relative;
 }
 
 .close-btn {
   font-size: 2rem;
   background: transparent;
-  border-color: transparent;
+  border: transparent;
   color: var(--primary-500);
   position: absolute;
   top: 1rem;
   right: 1rem;
-  cursor: pointer;
 }
+
 .sidebar article {
   margin-bottom: 2rem;
 }
+
 .sidebar h4 {
   margin-bottom: 1rem;
   color: var(--primary-700);
@@ -399,14 +400,16 @@ Sidebar
   align-items: center;
   gap: 1rem;
 }
+
 .sidebar-sublinks svg {
   color: var(--grey-500);
 }
-/* @media screen and (min-width: 992px) {
+
+@media screen and (min-width: 992px) {
   .sidebar {
     display: none;
   }
-} */
+}
 
 /* 
 ============= 
@@ -437,59 +440,5 @@ Nav Links
     text-transform: capitalize;
     letter-spacing: var(--letterSpacing);
     cursor: pointer;
-  }
-}
-
-/* 
-============= 
-Submenu
-=============== 
-*/
-.submenu {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .submenu {
-    display: block;
-    position: fixed;
-    top: 7rem;
-    left: 50%;
-    width: var(--fluid-width);
-    max-width: var(--max-width);
-    background: var(--white);
-    padding: 2rem;
-    transform: rotateX(-90deg) translateX(-50%);
-    transform-origin: top;
-    perspective: 1000px;
-    border-radius: var(--borderRadius);
-    visibility: hidden;
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-    z-index: -1;
-  }
-  .show-submenu {
-    visibility: visible;
-    opacity: 1;
-    transform: rotateX(0deg) translateX(-50%);
-    z-index: 10;
-  }
-  .submenu h5 {
-    margin-bottom: 1rem;
-    color: var(--primary-700);
-  }
-  .submenu-links {
-    display: grid;
-    row-gap: 0.5rem;
-  }
-  .submenu-links a {
-    display: block;
-    color: var(--grey-900);
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  .submenu-links svg {
-    color: var(--grey-500);
   }
 }
