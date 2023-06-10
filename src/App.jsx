@@ -7,7 +7,6 @@ import Sidebar from "./Sidebar"
 
 function App() {
   const { isSidebarOpen } = useGlobalContext()
-  console.log(isSidebarOpen)
 
   return (
     <main>

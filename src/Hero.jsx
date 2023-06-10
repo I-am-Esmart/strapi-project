@@ -1,5 +1,3 @@
-import React from "react"
-
 const Hero = () => {
   return (
     <div className="hero-container">
@@ -8,13 +6,13 @@ const Hero = () => {
           Manage Any Content <br /> Anywhere
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure id,
-          vel officiis, repellat odit nemo eius totam delectus quos eligendi
-          possimus tempore ratione, sequi laudantium vitae? Unde, quod fugiat!{" "}
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+          eaque saepe fugit quidem deleniti dolores dolorum magnam, sint ullam
+          maxime eos eveniet. Excepturi temporibus sapiente explicabo doloribus
+          repellat ipsam animi?
         </p>
       </div>
     </div>
   )
 }
-
 export default Hero
